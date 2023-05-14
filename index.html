@@ -23,16 +23,24 @@
 </head>
 
 <body>
-    <form action="" method="post">
-        <div class="column">
-            <h2>計算機</h2>
-            <div class=contanier>
-                <input type="num1" placeholder="１つ目の数字">
-                <input type="num2" placeholder="2つ目の数字">
+
+    <div class="column">
+        <h2>計算機</h2>
+        <div class=contanier>
+            <form action="/" method="post">
+                <input type="text" name="num1" placeholder="１つ目の数字">
+                <select name="operator">
+                    <option value="1">+</option>
+                    <option value="2">-</option>
+                    <option value="3">×</option>
+                    <option value="4">÷</option>
+                </select>
+                <input type="text" name="num2" placeholder="2つ目の数字">
                 <button type="submit" name="submit">計算</button>
-            </div>
+            </form>
         </div>
-    </form>
+    </div>
+
 
 </body>
 
